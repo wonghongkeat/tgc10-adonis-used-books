@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello Adonis</title>
+</head>
+<body>
+<h1>Add a new book!</h1>
+<form method="POST">
+    {{csrfField()}}
+    <div>
+        <label class="form-label">firstname</label>
+        <input type="text" name="firstNAme" class="form-control"/>
+    </div>
+    <div>
+        <label class="form-label">lastname</label>
+        <input type="text" name="lastName" class="form-control"/>
+    </div>
+    <div>
+        <label class="form-label">dob</label>
+        <input type="date" name="date" class="form-control"/>
+    </div>
+    <input type="submit" value="Add" class="btn btn-primary mt-3"/>
+
+
+</form>
+</body>
+</html>
